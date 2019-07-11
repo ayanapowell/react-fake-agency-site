@@ -1,16 +1,18 @@
 import React from "react";
-
-const navEl = {
-  display: "flex"
-};
+import { Link } from "react-router-dom";
 
 function Navigation() {
   return (
-    <div style={navEl}>
-      <h2>Yooo</h2>
-      <li>Tour</li>
-      <li>Support</li>
-      <li>Contact</li>
+    <div className="navigation">
+      <li>
+        <Link to="/tour">Tour</Link>
+      </li>
+      <li>
+        <Link to="/support">Support</Link>
+      </li>
+      <li>
+        <Link to="/about">About</Link>
+      </li>
     </div>
   );
 }
