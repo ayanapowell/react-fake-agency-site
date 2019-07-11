@@ -1,10 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Logo from "./Logo";
 
 function Header() {
   return (
-    <div className="jumbotron">
-      <h1>Agency</h1>
+    <div>
+      <Link to="/">
+        <Logo />
+      </Link>
     </div>
   );
 }
